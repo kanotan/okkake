@@ -1,0 +1,11 @@
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Layout:
+  Exclude:
+    - 'bin/bundle'
+Metrics:
+  Exclude:
+    - 'bin/bundle'
