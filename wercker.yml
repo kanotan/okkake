@@ -1,0 +1,20 @@
+box: kanotan/rails-ci:3.1.0
+services:
+  - id: kanotan/postgres:13.4-postgis-3.2
+    env:
+      POSTGRES_PASSWORD: password
+
+build:
+  steps:
+    - bundle-install
+    - ? script
+      name: rubocop
+      code: ./bin/rubocop
+    - rails-database-yml:
+      service: postgresql-docker
+    - ? script
+      name: db:reset
+      code: RAILS_ENV=test bundle exec rake db:schema:load
+    - ? script
+      name: rspec
+      code: COVERAGE=1 ./bin/rspec --format progress
