@@ -1405,6 +1405,8 @@ GEM
       timeout
     net-ssh (6.1.0)
     nio4r (2.5.8)
+    nokogiri (1.13.0-aarch64-linux)
+      racc (~> 1.4)
     nokogiri (1.13.0-x86_64-linux)
       racc (~> 1.4)
     parallel (1.21.0)
@@ -1566,6 +1568,7 @@ GEM
     zeitwerk (2.5.3)
 
 PLATFORMS
+  aarch64-linux
   x86_64-linux
 
 DEPENDENCIES
@@ -1613,4 +1616,4 @@ RUBY VERSION
    ruby 3.1.0p0
 
 BUNDLED WITH
-   2.3.4
+   2.3.3
