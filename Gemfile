@@ -22,6 +22,12 @@ gem 'stimulus-rails'
 gem 'turbo-rails'
 gem 'whenever'
 
+gem 'devise'
+gem 'devise-i18n'
+gem 'devise_token_auth', github: 'lynndylanhurley/devise_token_auth' # Rails7対応のためリポジトリ直指定
+gem 'omniauth-google-oauth2'
+gem 'omniauth-twitter'
+
 group :development, :test do
   gem 'awesome_print'
   gem 'bullet'
