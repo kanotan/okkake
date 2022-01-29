@@ -27,11 +27,13 @@ gem 'devise-i18n'
 gem 'devise_token_auth', github: 'lynndylanhurley/devise_token_auth' # Rails7対応のためリポジトリ直指定
 gem 'omniauth-google-oauth2'
 gem 'omniauth-twitter'
+gem 'rack-cors'
 
 group :development, :test do
   gem 'awesome_print'
   gem 'bullet'
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'dotenv-rails'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'rspec-rails'

@@ -1357,6 +1357,10 @@ GEM
       devise (>= 4.8.0)
     diff-lcs (1.5.0)
     digest (3.1.0)
+    dotenv (2.7.6)
+    dotenv-rails (2.7.6)
+      dotenv (= 2.7.6)
+      railties (>= 3.2)
     down (5.2.4)
       addressable (~> 2.8)
     erubi (1.10.0)
@@ -1400,7 +1404,7 @@ GEM
       activesupport (>= 5.0)
     hashdiff (1.0.1)
     hashie (5.0.0)
-    i18n (1.8.11)
+    i18n (1.9.0)
       concurrent-ruby (~> 1.0)
     image_processing (1.12.1)
       mini_magick (>= 4.9.5, < 5)
@@ -1491,6 +1495,8 @@ GEM
     raabro (1.4.0)
     racc (1.6.0)
     rack (2.2.3)
+    rack-cors (1.1.1)
+      rack (>= 2.0.0)
     rack-protection (2.1.0)
       rack
     rack-test (1.1.0)
@@ -1670,6 +1676,7 @@ DEPENDENCIES
   devise
   devise-i18n
   devise_token_auth!
+  dotenv-rails
   factory_bot_rails
   faker
   image_processing (~> 1.2)
@@ -1679,6 +1686,7 @@ DEPENDENCIES
   omniauth-twitter
   pg (~> 1.1)
   puma (~> 5.0)
+  rack-cors
   rails (~> 7.0.1)
   redis (~> 4.0)
   rspec-rails
