@@ -54,6 +54,7 @@ group :test do
   gem 'database_cleaner'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers'
+  gem 'simplecov'
   gem 'webdrivers'
   gem 'webmock'
 end
