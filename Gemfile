@@ -22,14 +22,23 @@ gem 'stimulus-rails'
 gem 'turbo-rails'
 gem 'whenever'
 
+gem 'devise'
+gem 'devise-i18n'
+gem 'devise_token_auth', github: 'lynndylanhurley/devise_token_auth' # Rails7対応のためリポジトリ直指定
+gem 'omniauth-google-oauth2'
+gem 'omniauth-twitter'
+gem 'rack-cors'
+
 group :development, :test do
   gem 'awesome_print'
   gem 'bullet'
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'dotenv-rails'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'rspec-rails'
   gem 'rubocop', require: false
+  gem 'rubocop-faker', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rspec', require: false
 end
@@ -45,6 +54,7 @@ group :test do
   gem 'database_cleaner'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers'
+  gem 'simplecov'
   gem 'webdrivers'
   gem 'webmock'
 end
